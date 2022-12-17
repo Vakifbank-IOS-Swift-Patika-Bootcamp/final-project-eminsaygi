@@ -1,0 +1,20 @@
+PODS:
+  - DropDown (2.3.13)
+  - Kingfisher (7.3.2)
+
+DEPENDENCIES:
+  - DropDown
+  - Kingfisher (~> 7.3)
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+
+PODFILE CHECKSUM: 564994004658250d77be33bff4b1a04240700e23
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module Pods_GameZone {
+  umbrella header "Pods-GameZone-umbrella.h"
+
+  export *
+  module * { export * }
+}
