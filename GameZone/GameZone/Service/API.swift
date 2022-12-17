@@ -11,7 +11,7 @@ class API {
      let apiKey = "key=efd5fbffb5c9441facda55cb48841354"
 }
 
-struct TypeMovie  {
+struct TypeCategoryGame  {
      let racing = "racing"
      let shooter = "shooter"
      let adventure = "adventure"
