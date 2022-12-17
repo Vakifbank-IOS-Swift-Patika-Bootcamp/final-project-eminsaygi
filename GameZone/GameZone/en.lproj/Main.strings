@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3ll-G5-kfd"; */
+"3ll-G5-kfd.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8Cc-TX-lM0"; */
+"8Cc-TX-lM0.text" = "Label";
+
+/* Class = "UILabel"; text = "2012-04-25"; ObjectID = "Bmy-uC-o6x"; */
+"Bmy-uC-o6x.text" = "2012-04-25";
+
+/* Class = "UILabel"; text = "7.8/10"; ObjectID = "HkA-yK-l6u"; */
+"HkA-yK-l6u.text" = "7.8/10";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KCz-b7-Uxj"; */
+"KCz-b7-Uxj.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MBe-iK-sJg"; */
+"MBe-iK-sJg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PpJ-Px-sTx"; */
+"PpJ-Px-sTx.text" = "Label";
+
+/* Class = "UIViewController"; title = "Details Page"; ObjectID = "SYl-5M-dIa"; */
+"SYl-5M-dIa.title" = "Details Page";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aoF-pk-D6J"; */
+"aoF-pk-D6J.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "dS3-bL-CAT"; */
+"dS3-bL-CAT.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gI2-rK-kxR"; */
+"gI2-rK-kxR.text" = "Label";
+
+/* Class = "UILabel"; text = "7.8/10"; ObjectID = "hsH-XD-95C"; */
+"hsH-XD-95C.text" = "7.8/10";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qVg-8N-gok"; */
+"qVg-8N-gok.text" = "Label";
+
+/* Class = "UILabel"; text = "7.8/10"; ObjectID = "tXs-KF-yAA"; */
+"tXs-KF-yAA.text" = "7.8/10";
+
+/* Class = "UINavigationItem"; title = "Details"; ObjectID = "uLh-C1-RMd"; */
+"uLh-C1-RMd.title" = "Details";
