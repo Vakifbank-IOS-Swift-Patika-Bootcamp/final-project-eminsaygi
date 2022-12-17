@@ -1,9 +1,3 @@
-//
-//  SwiftUIView.swift
-//  TMDB-App
-//
-//  Created by Emin Saygı on 5.11.2022.
-//
 
 import SwiftUI
 

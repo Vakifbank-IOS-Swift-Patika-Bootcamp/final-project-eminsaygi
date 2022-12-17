@@ -154,8 +154,8 @@ extension FavouritesVC {
                         relaseDateArray.append(relaseDate)
                         
                     }
-                    if let movieImage = result.value(forKey: "image") as? String {
-                        gameImageArray.append(movieImage)
+                    if let gameImage = result.value(forKey: "image") as? String {
+                        gameImageArray.append(gameImage)
                         
                     }
                     

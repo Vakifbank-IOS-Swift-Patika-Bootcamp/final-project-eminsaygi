@@ -16,7 +16,7 @@ class GameDetailVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var saveMovieButton: UIButton!
+    @IBOutlet weak var saveGameButton: UIButton!
     override func viewDidLoad(){
         super.viewDidLoad()
         
@@ -29,9 +29,9 @@ class GameDetailVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        guard let movieIdArray = self.gameIdArray else {return}
+        guard let gameIdArray = self.gameIdArray else {return}
         
-        for id in movieIdArray {
+        for id in gameIdArray {
             if id == selectedId {
                 isactive = false
                 
@@ -46,7 +46,7 @@ class GameDetailVC: UIViewController {
     
     private func isButtonActive(){
         isButtonImage(imageName: "checkmark.circle.fill")
-        saveMovieButton.isEnabled = false
+        saveGameButton.isEnabled = false
     }
     
     
@@ -68,12 +68,12 @@ class GameDetailVC: UIViewController {
                 try context.save() // Telefonu yeniden başlatınca kaydetmeyi sağlıyor
                 savedAlert(title: "Succes", message: "Congratulations. Successfully Saved")
                 isButtonImage(imageName: "checkmark.circle.fill")
-                saveMovieButton.isEnabled = false
+                saveGameButton.isEnabled = false
                 
             }
             
         } catch {
-            print("Catch: MovieDetailVC.swift : saveFavouriteButton")
+            print("Catch: GameDetail.swift : saveFavouriteButton")
             
         }
         
@@ -82,7 +82,7 @@ class GameDetailVC: UIViewController {
         
     }
     private func isButtonImage(imageName: String){
-        saveMovieButton.setImage(UIImage(systemName: imageName), for: .normal)
+        saveGameButton.setImage(UIImage(systemName: imageName), for: .normal)
         
         
     }

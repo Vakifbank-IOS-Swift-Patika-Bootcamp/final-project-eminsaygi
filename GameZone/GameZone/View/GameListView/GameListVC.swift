@@ -4,7 +4,7 @@ import CoreData
 
 class GameListVC: UIViewController, UISearchResultsUpdating {
     private let dropDown = DropDown()
-    private let typeMovie = TypeMovie()
+    private let typeGame = TypeCategoryGame()
     private var selectedId = 0
     private var gameIdArray = [Int]()
     public var langString = ""
@@ -25,7 +25,7 @@ class GameListVC: UIViewController, UISearchResultsUpdating {
         
         refreshControl()
         
-        getGameData(type: typeMovie.action)
+        getGameData(type: typeGame.action)
         
         
     }
@@ -64,7 +64,7 @@ class GameListVC: UIViewController, UISearchResultsUpdating {
     
     // View ekranı oluştuktan hemen sonra çağrılır.
     override func viewDidAppear(_ animated: Bool) {
-        getGameData(type: typeMovie.action)
+        getGameData(type: typeGame.action)
         
     }
     
@@ -158,32 +158,32 @@ extension GameListVC {
     
     
     private func DropDownListOptions() {
-        let categoryMovies = ["\(langChange(str: "Action", lang: Utils.shared.lang))","\(langChange(str: "Racing", lang: Utils.shared.lang))","\(langChange(str: "Shotter", lang: Utils.shared.lang))","\(langChange(str: "Adventure", lang: Utils.shared.lang))","\(langChange(str: "Fighting", lang: Utils.shared.lang))"]
+        let categoryGame = ["\(langChange(str: "Action", lang: Utils.shared.lang))","\(langChange(str: "Racing", lang: Utils.shared.lang))","\(langChange(str: "Shotter", lang: Utils.shared.lang))","\(langChange(str: "Adventure", lang: Utils.shared.lang))","\(langChange(str: "Fighting", lang: Utils.shared.lang))"]
         
         lblTitle.text = "\(langChange(str: "Action", lang: Utils.shared.lang))"
         
         dropDown.anchorView = viewDropDown
-        dropDown.dataSource = categoryMovies
+        dropDown.dataSource = categoryGame
         
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
         dropDown.direction = .bottom
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             switch item {
             case "\(langChange(str: "Action", lang: Utils.shared.lang))":
-                getGameData(type: typeMovie.action)
+                getGameData(type: typeGame.action)
             case "\(langChange(str: "Racing", lang: Utils.shared.lang))":
-                getGameData(type: typeMovie.racing)
+                getGameData(type: typeGame.racing)
             case "\(langChange(str: "Shotter", lang: Utils.shared.lang))":
-                getGameData(type: typeMovie.shooter)
+                getGameData(type: typeGame.shooter)
             case "\(langChange(str: "Adventure", lang: Utils.shared.lang))":
-                getGameData(type: typeMovie.adventure)
+                getGameData(type: typeGame.adventure)
             case "\(langChange(str: "Fighting", lang: Utils.shared.lang))":
-                getGameData(type: typeMovie.fighting)
+                getGameData(type: typeGame.fighting)
             default:
-                getGameData(type: typeMovie.action)
+                getGameData(type: typeGame.action)
                 
             }
-            self.lblTitle.text = categoryMovies[index]
+            self.lblTitle.text = categoryGame[index]
             
         }
         
@@ -247,8 +247,7 @@ extension GameListVC{
     
     @objc private func didPullToRefresh(){
         
-        //getMovieData(type: typeMovie.voteCount)
-        getGameData(type: typeMovie.action)
+        getGameData(type: typeGame.action)
         lblTitle.text = "\(langChange(str: "Action", lang: Utils.shared.lang))"
         gameListTable.refreshControl?.endRefreshing()
     }
