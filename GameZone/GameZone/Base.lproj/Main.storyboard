@@ -271,11 +271,27 @@
             </objects>
             <point key="canvasLocation" x="3373.8461538461538" y="704.50236966824639"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--NoteVC-->
+        <scene sceneID="Yit-0w-Now">
+            <objects>
+                <viewController id="XED-wm-P72" customClass="NoteVC" customModule="GameZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58E-he-a1W">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YEk-Re-Uyk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ari-s6-0Pj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pJ-sd-pIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3481.679389312977" y="-726.05633802816908"/>
+        </scene>
+        <!--Settings-->
         <scene sceneID="n0i-A6-LMW">
             <objects>
                 <navigationController id="Vbb-fB-3lI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="settings" id="Afx-9r-ej0"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Afx-9r-ej0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzE-nD-jBp">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -286,7 +302,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqs-cp-ejJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3486" y="-690"/>
+            <point key="canvasLocation" x="4411.4503816793895" y="-690.14084507042253"/>
         </scene>
         <!--SettingsVC Bridge-->
         <scene sceneID="pUC-ch-3fg">
@@ -299,13 +315,13 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mel-L7-bhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4192" y="-709"/>
+            <point key="canvasLocation" x="5118.320610687023" y="-709.15492957746483"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="ezh-o5-8Ut">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Xz-V3-ekf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="gamepad" id="it5-d6-uMm"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="gamepad" id="it5-d6-uMm"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yeA-8r-Jpc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eGG-Bg-VSd">
@@ -336,18 +352,19 @@
                     <connections>
                         <segue destination="0Xz-V3-ekf" kind="relationship" relationship="viewControllers" id="oke-pE-HyT"/>
                         <segue destination="nXX-oh-uuf" kind="relationship" relationship="viewControllers" id="r6a-V7-Pl5"/>
-                        <segue destination="Vbb-fB-3lI" kind="relationship" relationship="viewControllers" id="b3I-Eb-AEj"/>
+                        <segue destination="IfJ-t4-Pue" kind="relationship" relationship="viewControllers" id="3Zl-Cf-Gvx"/>
+                        <segue destination="Vbb-fB-3lI" kind="relationship" relationship="viewControllers" id="mvS-9n-jvK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KtR-ia-6Pl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2576.9230769230767" y="-34.123222748815166"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favourite-->
         <scene sceneID="apq-7A-WIG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nXX-oh-uuf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bookmark" id="Wz0-Dk-DUQ"/>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="bookmark" id="Wz0-Dk-DUQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpT-72-X9n">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -490,6 +507,25 @@
             </objects>
             <point key="canvasLocation" x="5304.6153846153848" y="275.82938388625593"/>
         </scene>
+        <!--Note-->
+        <scene sceneID="jsd-Gr-is4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IfJ-t4-Pue" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Note" image="note" id="hEZ-O8-YpM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VI0-0J-dDm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XED-wm-P72" kind="relationship" relationship="rootViewController" id="gIg-as-Wzv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0B-em-2Ub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554.9618320610684" y="-726.05633802816908"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="pcD-2R-eqV"/>
@@ -499,9 +535,10 @@
         <image name="arrow" width="12" height="12"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="bookmark" width="32" height="32"/>
-        <image name="gamepad" width="64" height="64"/>
+        <image name="gamepad" width="32" height="32"/>
         <image name="imdb" width="49" height="24"/>
         <image name="logo" width="400" height="400"/>
+        <image name="note" width="32" height="32"/>
         <image name="rate" width="16" height="16"/>
         <image name="settings" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
