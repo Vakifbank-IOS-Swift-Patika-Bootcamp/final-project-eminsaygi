@@ -1,6 +1,6 @@
-# Gamme Zone 
+# Game Zone 
 
-Game Zone is an iOS app that allows you to browse and search for games, view game details, and add games to your favorites. It also includes a notes section where you can add and edit notes, and a settings section with options for changing the language and enabling dark mode.injection`
+Hello! Game Zone is a game discovery platform that allows you to browse, search and view game details. Users can add games to their favorites and add and edit notes. The application also allows users to customize the experience by changing language options and enabling dark mode. Additionally, unit/UI tests have been carried out to ensure the reliability and functionality of the application. To get started with the application, please follow the instructions provided.
 
 ## Features
 
@@ -29,6 +29,8 @@ api: https://api.rawg.io/docs/
 - Kingfisher
 - DropDown
 - CoreData
+- UserNotifications
+- UIkit
 
 
 ## Screenshots
