@@ -275,11 +275,23 @@
         <scene sceneID="Yit-0w-Now">
             <objects>
                 <viewController id="XED-wm-P72" customClass="NoteVC" customModule="GameZone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="58E-he-a1W">
+                    <view key="view" contentMode="scaleToFill" id="WiU-1N-0Ta">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YEk-Re-Uyk"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qTY-1M-tK2">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bBS-fL-HYS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bBS-fL-HYS" firstAttribute="bottom" secondItem="qTY-1M-tK2" secondAttribute="bottom" id="F7r-Pz-55f"/>
+                            <constraint firstItem="qTY-1M-tK2" firstAttribute="leading" secondItem="bBS-fL-HYS" secondAttribute="leading" id="htA-68-hYk"/>
+                            <constraint firstItem="bBS-fL-HYS" firstAttribute="trailing" secondItem="qTY-1M-tK2" secondAttribute="trailing" id="sO8-lk-1Pp"/>
+                            <constraint firstItem="qTY-1M-tK2" firstAttribute="top" secondItem="bBS-fL-HYS" secondAttribute="top" id="tkL-mH-gcL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ari-s6-0Pj"/>
                 </viewController>
