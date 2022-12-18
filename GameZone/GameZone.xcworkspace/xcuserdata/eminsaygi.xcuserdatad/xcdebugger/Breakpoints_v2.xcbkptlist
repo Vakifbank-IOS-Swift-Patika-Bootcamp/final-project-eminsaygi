@@ -3,4 +3,163 @@
    uuid = "D7424600-C376-4511-AFEC-CBA69A1C0D63"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9D5ED22-595F-415E-8110-B6992CD46A7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameZone/View/NotesView/AddNotesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "162E57A1-4009-4D3C-A6DC-86F9F5D73D9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameZone/View/NotesView/AddNotesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8C8D3E7-D165-48DA-9737-28F8266EA1C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameZone/View/NotesView/AddNotesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF2A1F74-4CD7-4A50-9C57-00D2CE808947"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameZone/View/NotesView/AddNotesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameZone/View/NotesView/AddNotesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "AddNotesVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E - da0a0b1b7ec6e658"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameZone.AddNotesVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GameZone.AddNotesVC"
+                  moduleName = "GameZone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eminsaygi/Desktop/Vakif/final-project-eminsaygi/GameZone/GameZone/View/NotesView/AddNotesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E - 930465545ee8e56c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameZone.AddNotesVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GameZone.AddNotesVC"
+                  moduleName = "GameZone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eminsaygi/Desktop/Vakif/final-project-eminsaygi/GameZone/GameZone/View/NotesView/AddNotesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E - 3ea2083f4ce64f64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameZone.AddNotesVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GameZone.AddNotesVC&gt;"
+                  moduleName = "GameZone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eminsaygi/Desktop/Vakif/final-project-eminsaygi/GameZone/GameZone/View/NotesView/AddNotesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E - 410e2ef1bedd9573"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameZone.AddNotesVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GameZone.AddNotesVC&gt;"
+                  moduleName = "GameZone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eminsaygi/Desktop/Vakif/final-project-eminsaygi/GameZone/GameZone/View/NotesView/AddNotesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "BFD38FAF-B4AF-43E3-BC64-E7D9C050C43E - 38ac9fdb8aea844f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameZone.AddNotesVC.__deallocating_deinit"
+                  moduleName = "GameZone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eminsaygi/Desktop/Vakif/final-project-eminsaygi/GameZone/GameZone/View/NotesView/AddNotesVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

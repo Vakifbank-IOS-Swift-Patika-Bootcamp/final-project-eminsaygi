@@ -28,33 +28,9 @@ class GameListVC: UIViewController, UISearchResultsUpdating {
         
         getGameData(type: typeGame.action)
         
-        //localPush()
         LocalNotificationManager.shared.checkPermission()
     }
-    func localPush(){
-        
-        
-        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
 
-        UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, error) in
-            if granted {
-                print("Bildirim izinleri alındı")
-                let content = UNMutableNotificationContent()
-                content.title = "Bildirim başlığı"
-                content.body = "Bildirim içeriği"
-
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-
-                let request = UNNotificationRequest(identifier: "bildirim-id", content: content, trigger: trigger)
-
-                UNUserNotificationCenter.current().add(request)
-            } else {
-                print("Bildirim izinleri alınamadı")
-            }
-        }
-        
-        
-    }
     
     private func getCoreData(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}

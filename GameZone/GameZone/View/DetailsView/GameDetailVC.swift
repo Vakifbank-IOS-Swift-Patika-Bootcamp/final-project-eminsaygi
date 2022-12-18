@@ -5,7 +5,7 @@ import CoreData
 class GameDetailVC: UIViewController {
     
     private var isactive: Bool = true
-    private var urlString = ""
+    var urlString = ""
     var selectedId = 0
     var gameIdArray : [Int]!
     
@@ -20,15 +20,15 @@ class GameDetailVC: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        
-        getDetailData()
+        titleLabel.text = "Test Game"
         imageView.backgroundColor = .darkGray
         overViewLabel.text = ""
         
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        getDetailData()
+
         guard let gameIdArray = self.gameIdArray else {return}
         
         for id in gameIdArray {
@@ -50,7 +50,7 @@ class GameDetailVC: UIViewController {
     }
     
     
-    @IBAction private func saveFavouriteButton(_ sender: Any) {
+    @IBAction  func saveFavouriteButton(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let saveData = NSEntityDescription.insertNewObject(forEntityName: "GamesData", into: context)
@@ -103,21 +103,36 @@ class GameDetailVC: UIViewController {
 
 extension GameDetailVC {
     
-    private func getDetailData(){
+     func getDetailData(){
         WebServices.shared.getDetailGame(id: selectedId){ result in
             
             
             
             DispatchQueue.main.async {
-                self.titleLabel.text = result?.name
-                self.releaseLabel.text = result?.released
-                self.overViewLabel.text = result?.descriptionRaw
-                let voteAveragaText = Utils.convertDouble(result!.rating, maxDecimals: 1)
-                self.voteAverageLabel.text = "\(voteAveragaText)/10"
-                
-                self.urlString = result?.backgroundImage ?? ""
-                let url = URL(string: self.urlString)
-                self.imageView.kf.setImage(with: url)
+                if let label = self.titleLabel {
+                    label.text = result?.name ?? ""
+                }
+
+                //self.titleLabel.text = result?.name ?? ""
+                if let label = self.releaseLabel {
+                    label.text = result?.released ?? ""
+                }
+
+                if let label = self.overViewLabel {
+                    label.text = result?.descriptionRaw ?? ""
+                }
+
+                if let label = self.voteAverageLabel {
+                    let voteAveragaText = Utils.convertDouble(result?.rating ?? 0.0, maxDecimals: 1)
+                    label.text = "\(voteAveragaText)/10"
+                }
+
+                if let imageView = self.imageView {
+                    self.urlString = result?.backgroundImage ?? ""
+                    let url = URL(string: self.urlString)
+                    imageView.kf.setImage(with: url)
+                }
+
             }
         }
     }
