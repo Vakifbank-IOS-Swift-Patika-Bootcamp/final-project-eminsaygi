@@ -1,7 +1,6 @@
 import UIKit
 import DropDown
 import CoreData
-import UserNotifications
 
 class GameListVC: UIViewController, UISearchResultsUpdating {
     private let dropDown = DropDown()

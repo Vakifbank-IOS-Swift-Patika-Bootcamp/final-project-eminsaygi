@@ -156,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="4303.0769230769229" y="-34.123222748815166"/>
         </scene>
-        <!--FavouritesVC-->
+        <!--Favourites-->
         <scene sceneID="SHD-CE-BYf">
             <objects>
                 <viewController id="4yG-Cg-hUo" customClass="FavouritesVC" customModule="GameZone" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,7 +260,7 @@
                             <constraint firstItem="vbi-3B-9Nc" firstAttribute="top" secondItem="Zbr-g9-KfP" secondAttribute="top" id="rq0-pH-abt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nro-GW-C4P"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="nro-GW-C4P"/>
                     <connections>
                         <outlet property="favouritesTable" destination="vbi-3B-9Nc" id="RwA-hU-oFt"/>
                         <segue destination="SYl-5M-dIa" kind="show" identifier="toFavDetailVC" id="Vn2-uR-Zzd"/>
@@ -553,7 +553,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pcD-2R-eqV"/>
+        <segue reference="Vn2-uR-Zzd"/>
         <segue reference="Nnc-Rc-cm2"/>
     </inferredMetricsTieBreakers>
     <resources>
